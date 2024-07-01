@@ -1,0 +1,58 @@
+@import "../styles/colors";
+.bg {
+  background-color: $elegant-dark-blue;
+  color: $white-smooth;
+  padding: 50px 0;
+}
+
+.columnsWrapper {
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+  gap: 2rem;
+
+  img {
+    max-width: 100%;
+  }
+}
+
+.title {
+  margin: 0;
+  font-size: 3rem;
+  font-weight: normal;
+}
+
+.desc {
+  color: $grey-smooth-2;
+  font-size: 0.8rem;
+}
+
+.column {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.button {
+  display: flex;
+  align-items: center;
+  background-color: transparent;
+  font-size: 1rem;
+  border-radius: 0.4rem;
+  color: $white-smooth;
+  border: 1px solid $white-smooth;
+  padding: 5px 15px;
+  text-decoration: none;
+}
+
+.buttonsWrapper {
+  display: flex;
+  gap: 0.8rem;
+  margin-top: 1.6rem;
+}
+
+.svg {
+  width: 2rem;
+  height: 2rem;
+  margin-right: 0.1rem;
+  // fill: $blue;
+}

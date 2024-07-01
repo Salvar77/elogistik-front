@@ -1,0 +1,19 @@
+@import "../styles/colors";
+
+.styledButton {
+  display: inline-flex;
+  align-items: center;
+  background-color: $white-smooth;
+  border: 0;
+  color: $dark-smooth;
+  padding: 5px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  box-sizing: border-box;
+  font-weight: bold;
+}
+
+.large {
+  // padding: 10px 25px;
+  font-size: 1rem;
+}

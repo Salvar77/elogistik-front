@@ -1,0 +1,25 @@
+@import "../styles/colors";
+.header {
+  background-color: $elegant-dark-blue;
+
+  &__logo {
+    color: $white-smooth;
+    text-decoration: none;
+  }
+
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0;
+  }
+
+  &__navLink {
+    color: #aaa;
+    text-decoration: none;
+  }
+
+  &__styledNav {
+    display: flex;
+    gap: 10px;
+  }
+}

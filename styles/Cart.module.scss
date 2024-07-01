@@ -1,0 +1,67 @@
+@import "./colors";
+
+.columnsWrapper {
+  display: grid;
+  grid-template-columns: 1.3fr 0.7fr;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.box {
+  background-color: $white-smooth;
+  border-radius: 0.2rem;
+  padding: 1rem;
+}
+
+.productInfoCell {
+  padding: 0.1rem 0;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.productImageBox {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 120px;
+  height: 120px;
+  padding: 0.1rem;
+
+  border-radius: 0.4rem;
+
+  img {
+    max-width: 100px;
+    max-height: 100px;
+  }
+}
+
+.btn {
+  display: block;
+  align-items: center;
+  text-align: center;
+  background-color: $elegant-dark-blue;
+  border: 0;
+  color: $white-smooth;
+  padding: 5px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  box-sizing: border-box;
+  font-weight: bold;
+  width: 100%;
+}
+
+.button {
+  margin: 0.4rem;
+  background-color: $elegant-dark-blue;
+  border: 0;
+  color: $white-smooth;
+  padding: 5px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  box-sizing: border-box;
+  font-weight: bold;
+}
+
+.cityHolder {
+  display: flex;
+  gap: 5px;
+}

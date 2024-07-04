@@ -1,0 +1,33 @@
+@import "../../styles/colors";
+
+.title {
+  font-size: 1.5rem;
+}
+
+.colWrapper {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 0.6rem;
+  margin-top: 0.4rem;
+  @media screen and (min-width: 768px) {
+    grid-template-columns: 0.8fr 1.2fr;
+  }
+  gap: 40px;
+  margin: 40px 0;
+}
+
+.whiteBox {
+  background-color: $white-smooth;
+  border-radius: 0.4rem;
+  padding: 0.8rem;
+}
+
+.priceRow {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.price {
+  font-size: 1.4rem;
+}

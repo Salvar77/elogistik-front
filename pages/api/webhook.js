@@ -5,8 +5,7 @@ const stripe = require("stripe")(process.env.STRIPE_SK);
 
 import { buffer } from "micro";
 
-const endpointSecret =
-  "whsec_9d98a3135cb08a804688982b7558092886f2cdb81f9dd04e2a44014847b2a3f7";
+const endpointSecret = process.env.ENDPOINT_SECRET;
 
 const handler = async (req, res) => {
   await mongooseConnect();

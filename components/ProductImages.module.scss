@@ -1,0 +1,27 @@
+.image {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.bigImage {
+  max-width: 100%;
+  max-height: 200px;
+}
+
+.bigImageWrapper {
+  text-align: center;
+}
+
+.imageButtons {
+  display: flex;
+  margin-top: 10px;
+  gap: 10px;
+}
+
+.imageButton {
+  border: 2px solid #ccc;
+  height: 40px;
+  padding: 2px;
+  cursor: pointer;
+  border-radius: 3px;
+}

@@ -25,7 +25,7 @@ const Featured = ({ product }) => {
               <p className={classes.desc}>{product.description}</p>
               <div className={classes.buttonsWrapper}>
                 <ButtonLink
-                  href={"/products/" + product._id}
+                  href={"/product/" + product._id}
                   className={classes.button}
                 >
                   Czytaj więcej

@@ -1,3 +1,4 @@
+import React from "react";
 import Header from "@/components/Header";
 import classes from "../styles/Cart.module.scss";
 import Center from "@/components/Center";
@@ -122,7 +123,12 @@ const CartPage = () => {
                         >
                           -
                         </button>
-                        {cartProducts.filter((id) => id === product._id).length}
+                        <div className={classes.quantityLabel}>
+                          {
+                            cartProducts.filter((id) => id === product._id)
+                              .length
+                          }
+                        </div>
                         <button
                           onClick={() => moreOfThisProduct(product._id)}
                           className={classes.button}

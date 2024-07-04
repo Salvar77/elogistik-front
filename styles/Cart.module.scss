@@ -2,15 +2,19 @@
 
 .columnsWrapper {
   display: grid;
-  grid-template-columns: 1.3fr 0.7fr;
+  grid-template-columns: 1fr;
   gap: 2rem;
   margin-top: 2rem;
+  @media screen and (min-width: 768px) {
+    grid-template-columns: 1.2fr 0.8fr;
+  }
 }
 
 .box {
   background-color: $white-smooth;
   border-radius: 0.2rem;
   padding: 1rem;
+  margin-bottom: 0.7rem;
 }
 
 .productInfoCell {
@@ -24,13 +28,22 @@
   justify-content: center;
   width: 120px;
   height: 120px;
-  padding: 0.1rem;
+  padding: 2px;
 
   border-radius: 0.4rem;
 
   img {
     max-width: 100px;
     max-height: 100px;
+  }
+
+  @media screen and (min-width: 768px) {
+    padding: 10px;
+
+    img {
+      max-width: 120px;
+      max-height: 120px;
+    }
   }
 }
 
@@ -64,4 +77,13 @@
 .cityHolder {
   display: flex;
   gap: 5px;
+}
+
+.quantityLabel {
+  padding: 0 18px;
+  display: block;
+  @media screen and (min-width: 768px) {
+    display: inline-block;
+    padding: 0 10px;
+  }
 }

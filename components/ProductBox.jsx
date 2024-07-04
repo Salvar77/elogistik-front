@@ -10,7 +10,7 @@ const ProductBox = ({ _id, title, price, descripiton, images }) => {
   return (
     <div className={classes.productWrapper}>
       <Link className={classes.whiteBox} href={url}>
-        <img src={images[0]} alt=""></img>
+        <img src={images?.[0]} alt=""></img>
       </Link>
       <div className={classes.productInfoBox}>
         <Link className={classes.title} href={url}>

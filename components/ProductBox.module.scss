@@ -36,6 +36,9 @@
   cursor: pointer;
   box-sizing: border-box;
   font-weight: bold;
+  @media screen and (max-width: 768px) {
+    width: 100%;
+  }
 }
 
 .productInfoBox {
@@ -43,13 +46,23 @@
 }
 
 .priceRow {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
   margin-top: 0.2rem;
+  text-align: left;
+  @media screen and (min-width: 768px) {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    justify-content: space-between;
+  }
 }
 
 .price {
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   font-weight: bold;
+  text-align: right;
+  @media screen and (min-width: 768px) {
+    font-size: 1.5rem;
+    font-weight: 600;
+    text-align: left;
+  }
 }

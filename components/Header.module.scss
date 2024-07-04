@@ -16,7 +16,7 @@
   }
 
   &__styledNav {
-    display: block;
+    display: none; // domyślnie ukryte na mobilnym widoku
     gap: 15px;
     position: fixed;
     top: 0;
@@ -27,9 +27,16 @@
     background-color: $elegant-dark-blue;
     @media screen and (min-width: 768px) {
       display: flex;
-      gap: 30px;
+      gap: 10px;
       position: static;
       padding: 0;
+    }
+  }
+
+  &__styledNavActive {
+    display: block; // pokaż, gdy aktywne na mobilnym widoku
+    @media screen and (min-width: 768px) {
+      display: flex; // zawsze pokaż na desktopie
     }
   }
 
@@ -41,6 +48,11 @@
     @media screen and (min-width: 768px) {
       display: inline-block;
       margin: 0 10px;
+      padding: 0;
+    }
+    @media screen and (min-width: 992px) {
+      display: inline-block;
+      margin: 0 15px;
       padding: 0;
     }
   }
@@ -57,15 +69,17 @@
     @media screen and (min-width: 768px) {
       display: none;
     }
+    @media screen and (min-width: 992px) {
+      display: none;
+    }
   }
 }
 
-.header__styledNav {
-  display: none; /* domyślnie ukryte */
-}
-
 .header__styledNavActive {
-  display: block; /* pokaż, gdy aktywne */
+  display: block; // pokaż, gdy aktywne
+  @media screen and (min-width: 768px) {
+    display: flex; // zawsze pokaż na desktopie
+  }
 }
 
 .svg {

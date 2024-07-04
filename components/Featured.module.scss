@@ -43,13 +43,16 @@
   font-size: 1.5rem;
   font-weight: normal;
   @media screen and (min-width: 768px) {
-    font-size: 3rem;
+    font-size: 2.2rem;
   }
 }
 
 .desc {
-  color: $grey-smooth-2;
-  font-size: 0.8rem;
+  color: $grey-smooth;
+  font-size: 0.7rem;
+  @media screen and (min-width: 768px) {
+    font-size: 1rem;
+  }
 }
 
 .column {

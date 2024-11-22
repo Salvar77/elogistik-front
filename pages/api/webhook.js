@@ -24,7 +24,6 @@ const handler = async (req, res) => {
     return;
   }
 
-  // Handle the event
   switch (event.type) {
     case "checkout.session.completed":
       const data = event.data.object;
@@ -37,7 +36,7 @@ const handler = async (req, res) => {
       }
 
       break;
-    // ... handle other event types
+
     default:
       console.log(`Unhandled event type ${event.type}`);
   }

@@ -16,7 +16,7 @@
   }
 
   &__styledNav {
-    display: none; // domyślnie ukryte na mobilnym widoku
+    display: none;
     gap: 15px;
     position: fixed;
     top: 0;
@@ -34,9 +34,9 @@
   }
 
   &__styledNavActive {
-    display: block; // pokaż, gdy aktywne na mobilnym widoku
+    display: block;
     @media screen and (min-width: 768px) {
-      display: flex; // zawsze pokaż na desktopie
+      display: flex;
     }
   }
 
@@ -76,9 +76,9 @@
 }
 
 .header__styledNavActive {
-  display: block; // pokaż, gdy aktywne
+  display: block;
   @media screen and (min-width: 768px) {
-    display: flex; // zawsze pokaż na desktopie
+    display: flex;
   }
 }
 
